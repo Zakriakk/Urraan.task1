@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Layout</title>
+
+    <style>
+
+        * {
+            margin: 1px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(245, 240, 240);
+        }
+
+        /* Main Container */
+        main {
+            width: 820px;
+            height: 582px;
+            margin: 32px auto;
+            padding: 14px;
+            border: 3px solid black;
+
+            display: grid;
+            grid-template-rows: 72px 80px 270px 82px;
+            gap: 15px;
+        }
+
+        /* Red Box */
+        header {
+            background-color: #ff2929;
+            border: 2px solid rgb(81, 31, 207);
+        }
+
+        /* Blue Box */
+        nav {
+            background-color: #12b6cf;
+            border: 2px solid black;
+        }
+
+        /* Middle Section */
+        section {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 10px;
+        }
+
+        /* Left Section */
+        article {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Yellow Box */
+        .yellow {
+            background-color: #ffbd59;
+            border: 2px solid black;
+        }
+
+        /* Orange Box */
+        .orange {
+            background-color: #ff914d;
+            border: 2px solid black;
+        }
+
+        /* Pink Box */
+        aside {
+            background-color: #f65bb8;
+            border: 2px solid black;
+        }
+
+        /* Gray Box */
+        footer {
+            background-color: #777777;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <header> Start </header>
+
+        <nav> Navigation </nav>
+
+        <section>
+
+            <article>
+
+                <article class="yellow"> Yellow </article>
+
+                <article class="orange"> Orange </article>
+
+            </article>
+
+            <aside> picture</aside>
+
+        </section>
+
+        <footer> End </footer>
+
+    </main>
+
+</body>
+</html>
